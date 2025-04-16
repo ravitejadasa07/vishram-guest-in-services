@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VISHRAM GUEST IN SERVICES</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    h1, h2, h3, h4 {
+      font-family: 'Playfair Display', serif;
+    }
+    .scroll-reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.6s ease;
+    }
+    .scroll-reveal.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-800 relative">
+  <a href="#contact" class="fixed bottom-6 right-6 bg-yellow-400 hover:bg-yellow-500 text-black font-bold py-3 px-6 rounded-full shadow-lg transition z-50">
+    Contact Us
+  </a>
+
+  <!-- Header -->
+  <header class="bg-white shadow-md sticky top-0 z-40">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <div>
+        <h1 class="text-4xl font-bold text-indigo-900 leading-none tracking-wide">VISHRAM</h1>
+        <p class="text-md text-indigo-600 tracking-widest uppercase">Guest In Services</p>
+      </div>
+      <nav class="hidden md:flex space-x-8 font-medium text-md text-gray-600">
+        <a href="#" class="hover:text-indigo-700 transition">Home</a>
+        <a href="#" class="hover:text-indigo-700 transition">Rooms</a>
+        <a href="#gallery" class="hover:text-indigo-700 transition">Gallery</a>
+        <a href="#about" class="hover:text-indigo-700 transition">About</a>
+        <a href="#contact" class="hover:text-indigo-700 transition">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative h-[90vh] bg-cover bg-center flex items-center justify-center" style="background-image: url('https://source.unsplash.com/1600x900/?luxury,resort');">
+    <div class="bg-black bg-opacity-70 w-full h-full absolute top-0 left-0"></div>
+    <div class="relative z-10 text-center text-white px-8 max-w-3xl">
+      <h2 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">Luxury Redefined</h2>
+      <p class="text-xl md:text-2xl mb-8 font-light">Experience world-class hospitality at VISHRAM Guest In Services</p>
+      <a href="#contact" class="inline-block bg-gradient-to-r from-yellow-400 to-yellow-500 text-black px-10 py-4 rounded-full text-lg font-semibold shadow-lg hover:scale-105 transition">Book Your Stay</a>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="py-20 px-6 bg-white">
+    <div class="max-w-6xl mx-auto text-center">
+      <h3 class="text-4xl font-bold text-indigo-900 mb-4">Our Gallery</h3>
+      <div class="w-24 h-1 bg-yellow-400 mx-auto mb-10"></div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <img src="https://source.unsplash.com/400x300/?hotel-room" class="rounded-2xl shadow-lg" alt="Room" />
+        <img src="https://source.unsplash.com/400x300/?hotel-lobby" class="rounded-2xl shadow-lg" alt="Lobby" />
+        <img src="https://source.unsplash.com/400x300/?hotel-pool" class="rounded-2xl shadow-lg" alt="Pool" />
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-20 px-6 bg-indigo-50">
+    <div class="max-w-4xl mx-auto text-center">
+      <h3 class="text-4xl font-bold text-indigo-900 mb-4">About Us</h3>
+      <div class="w-24 h-1 bg-yellow-400 mx-auto mb-6"></div>
+      <p class="text-lg text-gray-700">VISHRAM Guest In Services is your luxurious escape nestled in the heart of the city. With elegant rooms, excellent service, and amenities designed for relaxation and comfort, we ensure every guest leaves with unforgettable memories.</p>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="py-20 px-6 bg-white">
+    <div class="max-w-5xl mx-auto text-center">
+      <h3 class="text-4xl font-bold text-indigo-900 mb-4">What Our Guests Say</h3>
+      <div class="w-24 h-1 bg-yellow-400 mx-auto mb-10"></div>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-indigo-50 p-6 rounded-3xl shadow-xl">
+          <p class="text-gray-700 mb-4">“A truly luxurious experience. The staff was so kind and professional. Definitely coming back!”</p>
+          <h4 class="text-indigo-800 font-semibold">— Riya Sharma</h4>
+        </div>
+        <div class="bg-indigo-50 p-6 rounded-3xl shadow-xl">
+          <p class="text-gray-700 mb-4">“Great rooms and top-notch service. Loved the attention to detail and cleanliness.”</p>
+          <h4 class="text-indigo-800 font-semibold">— Ankit Verma</h4>
+        </div>
+        <div class="bg-indigo-50 p-6 rounded-3xl shadow-xl">
+          <p class="text-gray-700 mb-4">“Perfect for both business and leisure. Convenient location and amazing comfort.”</p>
+          <h4 class="text-indigo-800 font-semibold">— Meera Kulkarni</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking CTA -->
+  <section class="bg-yellow-400 py-16 px-6 text-center">
+    <h3 class="text-4xl font-bold text-indigo-900 mb-4">Ready to Experience Vishram?</h3>
+    <p class="text-gray-800 mb-6 text-lg">Book your premium stay now and indulge in luxury like never before.</p>
+    <a href="#contact" class="bg-indigo-900 text-white px-8 py-4 rounded-full text-lg font-semibold shadow-md hover:scale-105 transition">Book Now</a>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="bg-indigo-50 py-20">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h3 class="text-4xl font-bold text-indigo-900 mb-6">Get in Touch</h3>
+      <p class="text-gray-700 mb-6">Have a question or want to book a room? We’d love to hear from you!</p>
+      <form class="grid gap-6 md:grid-cols-2">
+        <input type="text" placeholder="Your Name" class="p-4 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-400">
+        <input type="email" placeholder="Your Email" class="p-4 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-400">
+        <textarea placeholder="Your Message" class="md:col-span-2 p-4 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-400"></textarea>
+        <button class="md:col-span-2 bg-yellow-400 hover:bg-yellow-500 text-black font-semibold py-3 px-8 rounded-lg shadow-md transition">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-indigo-950 text-white py-8 text-center">
+    <p class="text-sm">&copy; 2025 VISHRAM GUEST IN SERVICES. All rights reserved.</p>
+    <p class="mt-2 text-sm">123 Main Street, City, India | +91-9876543210 | info@vishramguestin.com</p>
+  </footer>
+
+  <script>
+    const elements = document.querySelectorAll('.scroll-reveal');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+        }
+      });
+    }, {
+      threshold: 0.1
+    });
+
+    elements.forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
