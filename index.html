@@ -13,18 +13,10 @@
     h1, h2, h3, h4 {
       font-family: 'Playfair Display', serif;
     }
-    .scroll-reveal {
-      opacity: 0;
-      transform: translateY(30px);
-      transition: all 0.6s ease;
-    }
-    .scroll-reveal.active {
-      opacity: 1;
-      transform: translateY(0);
-    }
   </style>
 </head>
 <body class="bg-gray-100 text-gray-800 relative">
+  <!-- Floating Contact Button -->
   <a href="#contact" class="fixed bottom-6 right-6 bg-yellow-400 hover:bg-yellow-500 text-black font-bold py-3 px-6 rounded-full shadow-lg transition z-50">
     Contact Us
   </a>
@@ -38,7 +30,7 @@
       </div>
       <nav class="hidden md:flex space-x-8 font-medium text-md text-gray-600">
         <a href="#" class="hover:text-indigo-700 transition">Home</a>
-        <a href="#" class="hover:text-indigo-700 transition">Rooms</a>
+        <a href="#rooms" class="hover:text-indigo-700 transition">Rooms</a>
         <a href="#gallery" class="hover:text-indigo-700 transition">Gallery</a>
         <a href="#about" class="hover:text-indigo-700 transition">About</a>
         <a href="#contact" class="hover:text-indigo-700 transition">Contact</a>
@@ -56,43 +48,63 @@
     </div>
   </section>
 
-  <!-- Gallery Section -->
-  <section id="gallery" class="py-20 px-6 bg-white">
+  <!-- Rooms Section -->
+  <section id="rooms" class="py-20 px-6 bg-white">
     <div class="max-w-6xl mx-auto text-center">
-      <h3 class="text-4xl font-bold text-indigo-900 mb-4">Our Gallery</h3>
+      <h3 class="text-4xl font-bold text-indigo-900 mb-4">Our Rooms</h3>
       <div class="w-24 h-1 bg-yellow-400 mx-auto mb-10"></div>
-      <div class="grid md:grid-cols-3 gap-6">
-        <img src="https://source.unsplash.com/400x300/?hotel-room" class="rounded-2xl shadow-lg" alt="Room" />
-        <img src="https://source.unsplash.com/400x300/?hotel-lobby" class="rounded-2xl shadow-lg" alt="Lobby" />
-        <img src="https://source.unsplash.com/400x300/?hotel-pool" class="rounded-2xl shadow-lg" alt="Pool" />
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-gray-100 p-4 rounded-xl shadow-md">
+          <img src="https://source.unsplash.com/400x300/?hotel,room" alt="Deluxe Room" class="w-full h-48 object-cover rounded-md mb-4">
+          <h4 class="text-xl font-semibold mb-2">Deluxe Room</h4>
+          <p class="text-gray-600">Elegant room with premium facilities, perfect for couples or solo travelers.</p>
+        </div>
+        <div class="bg-gray-100 p-4 rounded-xl shadow-md">
+          <img src="https://source.unsplash.com/400x300/?luxury,bedroom" alt="Executive Suite" class="w-full h-48 object-cover rounded-md mb-4">
+          <h4 class="text-xl font-semibold mb-2">Executive Suite</h4>
+          <p class="text-gray-600">Spacious suite with luxury interiors and breathtaking views.</p>
+        </div>
+        <div class="bg-gray-100 p-4 rounded-xl shadow-md">
+          <img src="https://source.unsplash.com/400x300/?modern,interior" alt="Family Room" class="w-full h-48 object-cover rounded-md mb-4">
+          <h4 class="text-xl font-semibold mb-2">Family Room</h4>
+          <p class="text-gray-600">Perfect for families with extra space and kid-friendly amenities.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- About Section -->
-  <section id="about" class="py-20 px-6 bg-indigo-50">
-    <div class="max-w-4xl mx-auto text-center">
-      <h3 class="text-4xl font-bold text-indigo-900 mb-4">About Us</h3>
-      <div class="w-24 h-1 bg-yellow-400 mx-auto mb-6"></div>
-      <p class="text-lg text-gray-700">VISHRAM Guest In Services is your luxurious escape nestled in the heart of the city. With elegant rooms, excellent service, and amenities designed for relaxation and comfort, we ensure every guest leaves with unforgettable memories.</p>
+  <!-- Gallery Section -->
+  <section id="gallery" class="py-20 px-6 bg-indigo-50">
+    <div class="max-w-6xl mx-auto text-center">
+      <h3 class="text-4xl font-bold text-indigo-900 mb-4">Gallery</h3>
+      <div class="w-24 h-1 bg-yellow-400 mx-auto mb-10"></div>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <img src="https://source.unsplash.com/400x400/?hotel,lobby" class="rounded-lg shadow-md" alt="Lobby">
+        <img src="https://source.unsplash.com/400x400/?resort,pool" class="rounded-lg shadow-md" alt="Pool">
+        <img src="https://source.unsplash.com/400x400/?restaurant,dining" class="rounded-lg shadow-md" alt="Dining Area">
+        <img src="https://source.unsplash.com/400x400/?spa,luxury" class="rounded-lg shadow-md" alt="Spa">
+      </div>
     </div>
   </section>
 
   <!-- Testimonials -->
-  <section class="py-20 px-6 bg-white">
+  <section class="py-20 px-6 bg-indigo-50">
     <div class="max-w-5xl mx-auto text-center">
       <h3 class="text-4xl font-bold text-indigo-900 mb-4">What Our Guests Say</h3>
       <div class="w-24 h-1 bg-yellow-400 mx-auto mb-10"></div>
       <div class="grid md:grid-cols-3 gap-8">
-        <div class="bg-indigo-50 p-6 rounded-3xl shadow-xl">
+        <div class="bg-white p-6 rounded-3xl shadow-xl">
+          <img src="https://source.unsplash.com/200x200/?person,portrait" alt="Guest 1" class="w-24 h-24 rounded-full mx-auto mb-4">
           <p class="text-gray-700 mb-4">“A truly luxurious experience. The staff was so kind and professional. Definitely coming back!”</p>
           <h4 class="text-indigo-800 font-semibold">— Riya Sharma</h4>
         </div>
-        <div class="bg-indigo-50 p-6 rounded-3xl shadow-xl">
+        <div class="bg-white p-6 rounded-3xl shadow-xl">
+          <img src="https://source.unsplash.com/200x200/?person,smiling" alt="Guest 2" class="w-24 h-24 rounded-full mx-auto mb-4">
           <p class="text-gray-700 mb-4">“Great rooms and top-notch service. Loved the attention to detail and cleanliness.”</p>
           <h4 class="text-indigo-800 font-semibold">— Ankit Verma</h4>
         </div>
-        <div class="bg-indigo-50 p-6 rounded-3xl shadow-xl">
+        <div class="bg-white p-6 rounded-3xl shadow-xl">
+          <img src="https://source.unsplash.com/200x200/?person,happy" alt="Guest 3" class="w-24 h-24 rounded-full mx-auto mb-4">
           <p class="text-gray-700 mb-4">“Perfect for both business and leisure. Convenient location and amazing comfort.”</p>
           <h4 class="text-indigo-800 font-semibold">— Meera Kulkarni</h4>
         </div>
@@ -112,11 +124,11 @@
     <div class="max-w-4xl mx-auto px-6 text-center">
       <h3 class="text-4xl font-bold text-indigo-900 mb-6">Get in Touch</h3>
       <p class="text-gray-700 mb-6">Have a question or want to book a room? We’d love to hear from you!</p>
-      <form class="grid gap-6 md:grid-cols-2">
-        <input type="text" placeholder="Your Name" class="p-4 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-400">
-        <input type="email" placeholder="Your Email" class="p-4 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-400">
-        <textarea placeholder="Your Message" class="md:col-span-2 p-4 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-400"></textarea>
-        <button class="md:col-span-2 bg-yellow-400 hover:bg-yellow-500 text-black font-semibold py-3 px-8 rounded-lg shadow-md transition">Send Message</button>
+      <form action="https://formsubmit.co/ravitejadasari07@gmail.com" method="POST" class="grid gap-6 md:grid-cols-2">
+        <input type="text" name="name" placeholder="Your Name" required class="p-4 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-400">
+        <input type="email" name="email" placeholder="Your Email" required class="p-4 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-400">
+        <textarea name="message" placeholder="Your Message" required class="md:col-span-2 p-4 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-400"></textarea>
+        <button type="submit" class="md:col-span-2 bg-yellow-400 hover:bg-yellow-500 text-black font-semibold py-3 px-8 rounded-lg shadow-md transition">Send Message</button>
       </form>
     </div>
   </section>
@@ -126,20 +138,5 @@
     <p class="text-sm">&copy; 2025 VISHRAM GUEST IN SERVICES. All rights reserved.</p>
     <p class="mt-2 text-sm">123 Main Street, City, India | +91-9876543210 | info@vishramguestin.com</p>
   </footer>
-
-  <script>
-    const elements = document.querySelectorAll('.scroll-reveal');
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('active');
-        }
-      });
-    }, {
-      threshold: 0.1
-    });
-
-    elements.forEach(el => observer.observe(el));
-  </script>
 </body>
 </html>
